@@ -1,0 +1,187 @@
+/*--- CSS DO TOPO ---*/
+.topo {
+    align-items: center;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+}
+
+.logo__topo {
+    height: 28px;
+    width: 100px;
+}
+
+.ativo .buscar{
+    top: 0;
+    transition: ease-in-out .3s;
+}
+
+.buscar {
+    height: 72px;
+    left: 0;
+    position: absolute;
+    top: -72px;
+    transition: ease-in-out .3s;
+    width: 100vw;
+}
+
+.campo__busca {
+    background: var(--cinza-claro);
+    border: none;
+    height: 100%;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.icone__lupa{
+    display: none;
+}
+
+.icone__fechar {
+    color: var(--texto-padrao);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+
+
+/*--- CSS DO RODAPE ---*/
+.rodape__secaoUm {
+    background-color: var(--rodape);
+    height: 580px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.logo__rodape,
+.lista__rodape {
+    list-style: none;
+    text-align: center;
+}
+
+.lista__rodape li {
+    padding: .5rem 0;
+}
+
+.rodape__secaoDois{
+    height: 102px;
+    padding: 32px 0;
+    text-align: center;
+}
+
+
+@media (min-width: 750px) {
+
+    /*--- CSS DO TOPO ---*/
+    .lupa {
+        display: none;
+    }
+
+    .login {
+        order: 2;
+    }  
+
+    .buscar {
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        height: unset;
+        justify-content: flex-start;
+        left: unset;
+        margin-left: 32px;
+        position: static;
+        top: unset;
+        transition: unset;
+        width: unset;
+    }
+    
+    .campo__busca {
+        background: var(--cinza-claro);
+        border: none;
+        border-radius: 20px;
+        display: initial;
+        height: 40px;
+        padding: 8px 16px;
+        width: 272px;
+    }
+    
+    .icone__lupa {
+        display: initial;
+        margin-left: 235px;
+        margin-top: 5px;
+        opacity: .5;
+        position: absolute;
+    }
+    
+    .icone__fechar {
+        display: none;
+    }
+
+
+    /*--- CSS DO RODAPE ---*/
+    .rodape__secaoUm {
+        height: 400px;
+    }
+
+    .rodape {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo__rodape,
+    .lista__rodape {
+        text-align: left;
+    }
+
+    .lista__rodape li {
+        padding: 1rem 0;
+    }
+
+    .formulario__rodape fieldset {
+        max-width: 600px;
+        position: relative;
+        top: -45px;
+        width: 65vw;
+    }
+}
+
+
+@media (min-width: 1300px) {
+
+    /*--- CSS DO TOPO ---*/
+    .logo__topo {
+        height: 50px;
+        width: 176px;
+    }
+
+    .campo__busca {
+        margin-right: 300px;
+        width: 393px;
+    }
+
+    .icone__lupa {
+        margin-left: 350px;
+    }
+
+
+    /*--- CSS DO RODAPE ---*/
+    .nav__rodape{
+        display: flex;
+        justify-content: inherit;
+        max-width: 600px;
+        width: 35vw;
+    }
+
+    .formulario__rodape fieldset {
+        position: static;
+    }
+}

@@ -1,0 +1,52 @@
+.secao__produtos{
+    margin: 1.5rem 0;
+}
+
+.titulo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.titulo h3 {
+    width: 70%;
+}
+
+.verTudo {
+    color: var(--botao-primario);
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 72px;
+}
+
+.seta {
+    height: 11px;
+    position: relative;
+    top: 3px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 750px) {
+    .verTudo {
+        font-size: 16px;
+        height: 19px;
+        width: 92px;
+    }
+
+    .seta {
+        height: 16px;
+        margin-left: 8px;
+        top: 2px;
+        width: 16px;
+    }
+}

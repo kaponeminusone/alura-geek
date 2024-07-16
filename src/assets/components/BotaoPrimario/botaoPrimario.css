@@ -1,0 +1,52 @@
+.botaoPrimario{
+    background-color: var(--botao-primario);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.botaoPrimario:hover {
+    background-color: var(--botao-primario-hover);
+}
+
+.verConsoles {
+    height: 40px;
+    width: 119px;
+}
+
+.enviarMensagem, .adicionarProduto{
+    height: 40px;
+    width: 151px;
+}
+
+.entrar{
+    height: 40px;
+    width: 109px;
+}
+
+.adicionar{
+    height: 51px;
+    width: 100%;
+}
+
+
+@media (min-width: 1300px) {
+    .verConsoles {
+        height: 51px;
+        width: 130px; 
+    }
+
+    .enviarMensagem{
+        height: 51px;
+        width: 165px;
+    }
+
+    .entrar{
+        height: 62px;
+        width: 423px;
+    }
+}

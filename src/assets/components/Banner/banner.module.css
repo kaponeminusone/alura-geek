@@ -1,0 +1,48 @@
+.secao__banner {
+    background: url('../../images/banner-image.png') no-repeat;
+    background-position: center;
+    background-size: auto 192px;
+    color: white;
+    height: 192px;
+}
+
+.banner {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    height: 192px;
+    justify-content: space-between;
+    padding-top: 78px;
+}
+
+.banner p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .secao__banner {
+        background-size: cover;
+        height: 352px;
+    }
+    
+    .banner {
+        height: 352px;
+        padding-top: 161px;
+    }
+
+    .banner p {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+
+@media (min-width: 1300px) {   
+    .banner {
+        padding-top: 150px;
+    }
+}

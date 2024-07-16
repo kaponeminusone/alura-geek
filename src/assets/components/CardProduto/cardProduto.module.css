@@ -1,0 +1,51 @@
+.card {
+    line-height: 16px;
+    width: 156px;
+    margin-bottom: 1rem;
+}
+
+.imagem__produto {
+    height: 174px;
+    width: 100%;
+}
+
+.nome__produto {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.preco__produto {
+    font-weight: 700;
+    width: 100%;
+}
+
+.nome__produto, .preco__produto, .verProduto, .id__produto{
+    margin-top: .5rem;
+}
+
+.verProduto {
+    color: var(--botao-primario);
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .card {
+        width: 164px;
+    }
+
+    .verProduto {
+        font-size: 16px;
+        height: 19px;
+        line-height: 19px;
+        width: 91px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .card {
+        width: 176px;
+    }
+}

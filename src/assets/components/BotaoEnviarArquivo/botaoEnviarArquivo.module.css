@@ -1,0 +1,39 @@
+.botao{
+    margin-top: 1rem;
+}
+
+.container__input{
+    align-items: center;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.container__input p{
+    height: 20px;
+    max-width: 200px;
+    overflow: hidden;
+    padding-left: 1rem;
+    text-overflow: ellipsis;
+}
+
+.input{
+    background-color: var(--botao-primario);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: .5rem;
+    text-align: center;
+    width: 130px;
+}
+
+
+@media (min-width: 750px){
+    .container__input p{
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,20 @@
+.formulario__login{
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.formulario__login fieldset {
+    margin: 0 auto;
+    max-width: 423px;
+}
+
+.formulario__login legend{
+    text-align: center;
+}
+
+
+@media (min-width: 1300px){
+    .formulario__login legend{
+        font-size: 18px;
+    }
+}

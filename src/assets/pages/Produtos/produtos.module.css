@@ -1,0 +1,38 @@
+.secao__produtos{
+    padding: 1rem 0;
+}
+
+.topo__produtos{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 750px){
+    .topo__produtos{
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }   
+}
+
+
+@media (min-width: 1300px){
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+    }
+}

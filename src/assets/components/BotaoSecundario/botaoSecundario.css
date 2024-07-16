@@ -1,0 +1,43 @@
+.botaoSecundario {
+    background-color: var(--botao-secundario);
+    border: 1px solid var(--botao-primario);
+    color: var(--botao-primario);
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.botaoSecundario:hover {
+    background-color: var(--botao-secundario-hover);
+}
+
+.login{
+    height: 40px;
+    width: 133px;
+}
+
+.menuAdministrador{
+    height: 40px;
+    width: 166px;
+}
+
+@media (min-width: 750px) {
+    .login {
+        height: 40px;
+        width: 166px; 
+    }
+}
+
+@media (min-width: 1300px) {
+    .login {
+        height: 51px;
+        width: 182px; 
+    }
+
+    .menuAdministrador{
+        height: 51px;
+        width: 181px;
+    }
+}
